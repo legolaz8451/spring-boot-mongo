@@ -37,30 +37,6 @@
 			<groupId>org.liquibase.ext</groupId>
 			<artifactId>liquibase-mongodb</artifactId>
 			<version>${liquibase-mongo-ext.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.mongodb</groupId>
-					<artifactId>mongo-java-driver</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.mongodb</groupId>
-					<artifactId>mongodb-driver</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.mongodb</groupId>
-					<artifactId>mongodb-driver-core</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.mongodb</groupId>
-					<artifactId>bson</artifactId>
-				</exclusion>
-			</exclusions>
-
-		</dependency>
-		<dependency>
-			<groupId>org.mongodb</groupId>
-			<artifactId>mongo-java-driver</artifactId>
-			<version>3.12.11</version>
 		</dependency>
 	</dependencies>
 
@@ -90,37 +66,12 @@
 						<groupId>org.liquibase.ext</groupId>
 						<artifactId>liquibase-mongodb</artifactId>
 						<version>${liquibase-mongo-ext.version}</version>
-						<exclusions>
-							<exclusion>
-								<groupId>org.mongodb</groupId>
-								<artifactId>mongo-java-driver</artifactId>
-							</exclusion>
-							<exclusion>
-								<groupId>org.mongodb</groupId>
-								<artifactId>mongodb-driver</artifactId>
-							</exclusion>
-							<exclusion>
-								<groupId>org.mongodb</groupId>
-								<artifactId>mongodb-driver-core</artifactId>
-							</exclusion>
-							<exclusion>
-								<groupId>org.mongodb</groupId>
-								<artifactId>bson</artifactId>
-							</exclusion>
-						</exclusions>
 					</dependency>
 					<dependency>
 						<groupId>org.mongodb</groupId>
 						<artifactId>mongodb-driver-sync</artifactId>
 						<version>4.6.1</version>
 					</dependency>
-					<!--
-					<dependency>
-						<groupId>org.mongodb</groupId>
-						<artifactId>mongo-java-driver</artifactId>
-						<version>3.12.11</version>
-					</dependency>
-				-->
 				</dependencies>
 			</plugin>
 		</plugins>
