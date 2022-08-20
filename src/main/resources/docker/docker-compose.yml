@@ -1,0 +1,25 @@
+version: '2'
+
+services:
+  app:
+    image: 'docker-spring-boot-mongo:latest'
+    build:
+      context: .
+    container_name: app
+    tty: true
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATA_MONGODB_HOST=db
+          
+  db:
+    image: mongo
+    container_name: db
+    restart: always
+    environment:
+#      MONGO_INITDB_ROOT_USERNAME: mongo
+#      MONGO_INITDB_ROOT_PASSWORD: mongo
+      MONGO_INITDB_DATABASE: test
+
+    ports:
+      - 127.0.0.1:27017:27017
